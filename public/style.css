@@ -1,0 +1,275 @@
+body{
+    margin-top: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.container1{
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    background-color: white;
+    height: 2800px;
+    -ms-flex-item-align: center;
+    align-self: center;
+    margin: 0px auto;
+    padding: 0 auto;
+}
+
+.contenedor{
+    margin: 50px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.header{
+    background-color:whitesmoke;
+    height: auto;
+    
+}
+
+.container-menu{
+    height: 60px;
+    background-color: rgb(39, 182, 163);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+
+}
+.container-logo{
+    width: 100%;
+    height: inherit;
+    background-color: azure;
+    text-align: center;
+}
+
+.site-title{
+    margin: 0;
+    padding: 0.36em 0;
+}
+
+.container-imagen{
+    
+    height: 240px;
+    /* margin-bottom: 20px; */
+}
+
+.nav-list{
+    padding: 0.25em 0;
+    list-style-type: none;
+    text-align: center;
+    width: 100%
+}
+
+.nav-element{
+    padding: 1em 15px;
+    display: inline-block;
+    text-decoration: none;
+    color: #3e3e3e;
+
+}
+
+.nav-element:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.image-text{
+    margin: 0;
+    padding: 0% 0;
+    text-align: center;
+}
+
+.section-1{
+    
+    flex-direction: row;
+    height: 500px;
+    background-color:#116979;
+
+}
+
+.section-2{
+    
+    flex-direction: row;
+    height: 520px;
+    background-color: gainsboro;
+}
+
+.section-3{
+    
+    flex-direction: row;
+    flex-wrap:row wrap;
+    height: 380px;
+    background-color:#de7119;
+}
+
+.section-4{
+    
+    
+    height: 300px;
+    text-align: center;
+    background-color:burlywood;
+
+}
+
+
+
+
+.footer{
+    height: 200px;
+    background-color:#18b0b0;
+    bottom: 0px;
+    text-align: center;
+    flex: content;
+    /* position: fixed; */
+    /* width: 1200px; */
+}
+
+.section-text{
+    margin: 0;
+    color: #3e3e3e;
+    background: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.col-3{
+    width: 32.08%;
+    height: 400px;
+    background-color:#dee3e2;
+    display: inline-block;
+    margin: 10px 5px 0;
+    text-align: center;
+}
+
+.col-2{
+    width: 45%;
+    height: 150px;
+    display: inline-block;
+    margin: 10px 5px 0;
+    text-align: center;
+    padding: 2px;
+    background-color:#dee3e2;
+}
+.col-5{
+    width: 19%;
+    height: 300px;
+    display: inline-block;
+    margin: 5px 4px 0;
+    text-align: center;
+    background-color:#18b0b0;
+}
+
+.service-content{
+    padding: 0.5em 0;
+}
+.service-text{
+    padding: 10px;
+    text-align: justify;
+    bottom: 0;
+}
+
+.service-text.memebers{
+    font-style: italic; 
+}
+
+.section-news > div:first-child{
+    margin-bottom: 2px; 
+}
+.news{
+    width: 100%;
+    background-color: cadetblue;
+    height: 250px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+
+.news > div:first-child{
+    margin: 0 6px;
+}
+
+.news-data{
+    width: 49%;
+    height: 230px;
+    background-color:white;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex; 
+    text-align: center;
+}
+
+.news-image{
+    margin: 10px 0;
+    padding: 0 40px;
+    color: white;
+}
+
+.news-text{
+    color: white;
+    text-align: justify;
+    width: 49%;
+    padding: 1em 0;
+}
+
+.news-text > span.news-url{
+    text-align: right;
+}
+
+
+.fa-ambulance.news-logo{
+    padding: 0.25em 0;
+}
+
+
+.news-url{
+    font-size: 10px;
+    float: right;
+}
+
+.news-url > a{
+
+    color: #ffffff; 
+}
+
+hr{
+    color: white;
+}
+
+.main-menu{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main-menu__item{
+    line-height: 3;
+}
+
+.main-menu__link{
+    text-decoration: none;
+    font-size: 1em;
+    color: #3e3e3e;
+}
+
+.main-menu__link:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+.card-body{
+
+    height: 200px;
+    text-align: center;
+}
+.card mb-3{
+    text-align: center;
+    margin-right: 10px ;
+    align-items: flex-start;
+
+
+}
+    

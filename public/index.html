@@ -11,10 +11,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-  
-  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>    
 </head>
     
  
@@ -145,87 +142,86 @@
         </div>
 
        
-        <!-- Noticias --> 
-        <a name="Noticias" id="Noticias"></a> 
+        <!-- Noticias -->         
+      <div id = "app">
         <div class="section-2">
-            <p class="section-text">Noticias</p>
-                         
-                              
-            <div class="section-news">
-                                
-                <div class="news-data">
-                    <div class="card mb-3" style="max-width: 600px;">
-                        <div class="row no-gutters">
-                          <div class="col-md-4">
-                            <img src="OpenLibra.png" class="card-img" alt="...">
-                          </div>
-                          <div class="col-md-8">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
-                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+          <h2 class="section-text">Noticias</h2>          
+          <div class="section-news">
+            <div class="news-data">
+              <div class="card mb-3" style="max-width: 600px;">
+                <div class="row no-gutters">
+                  <div v-for="item of noticias" class="col-md-4">
+                    <img src= "item.img" class="card-img" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title" v-for="item of noticias"> {{item.titulo}} </h5>
+                      <p class="card-text" v-for="item of noticias"> {{item.noticia}}</p>
+                      <button id="traerNoticia" @click="traerNoticia" type="button" class="btn btn-primary">Primary</button>
+                      <p class="card-text"><small class="text-muted" v-for="item of noticias"></small></p>
+                        
                     </div>
-                    <div class="news-data">
-                        <div class="card mb-3" style="max-width: 600px;">
-                            <div class="row no-gutters">
-                              <div class="col-md-4">
-                                <img src="OpenLibra.png" class="card-img" alt="...">
-                              </div>
-                              <div class="col-md-8">
-                                <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                    </div>
+                  </div>
                 </div>
-                <div class="news-data">
-                    <div class="card mb-3" style="max-width: 600px;">
-                        <div class="row no-gutters">
-                          <div class="col-md-4">
-                            <img src="OpenLibra.png" class="card-img" alt="...">
-                          </div>
-                          <div class="col-md-8">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
-                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+              </div>
+            </div>          
+            <div class="news-data">
+              <div class="card mb-3" style="max-width: 600px;">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img src="OpenLibra.png" class="card-img" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                     </div>
-                    <div class="news-data">
-                        <div class="card mb-3" style="max-width: 600px;">
-                            <div class="row no-gutters">
-                              <div class="col-md-4">
-                                <img src="OpenLibra.png" class="card-img" alt="...">
-                              </div>
-                              <div class="col-md-8">
-                                <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
+                  </div>
                 </div>
-
-            </div>
-         
+              </div>
+            </div>      
+          </div>
+          
+          <div class="section-news">
+            <div class="news-data">
+              <div class="card mb-3" style="max-width: 600px;">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img src="OpenLibra.png" class="card-img" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>          
+            <div class="news-data">
+              <div class="card mb-3" style="max-width: 600px;">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img src="OpenLibra.png" class="card-img" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>      
+          </div>                          
+        </div>
+      </div> 
 
         
 
@@ -301,13 +297,14 @@
             </div>
           </div>
       </div>
-            
-   
+                
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="app.js"></script>
     <script type = "text / javascript" src = "data.json"> </script>
     <script type = "text / javascript" src = "main.js"> </script>
     
   </body>
+
 
   <!-- Footer --> 
 
@@ -366,7 +363,5 @@
              </div>
       
       
-    </footer>
-    
-
+    </footer>    
     </html>
